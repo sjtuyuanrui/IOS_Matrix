@@ -35,6 +35,7 @@
 - (IBAction)minus:(id)sender;
 - (IBAction)multiply:(id)sender;
 - (IBAction)divide:(id)sender;
+- (IBAction)clear:(id)sender;
 
 @end
 
@@ -343,6 +344,28 @@
 
     
     }
+}
+
+- (IBAction)clear:(id)sender {
+    self.up1.text = nil;
+    self.up2.text = nil;
+    self.up3.text = nil;
+    self.up4.text = nil;
+    self.up5.text = nil;
+    self.up6.text = nil;
+    self.up7.text = nil;
+    self.up8.text = nil;
+    self.up9.text = nil;
+    
+    self.down1.text = nil;
+    self.down2.text = nil;
+    self.down3.text = nil;
+    self.down4.text = nil;
+    self.down5.text = nil;
+    self.down6.text = nil;
+    self.down7.text = nil;
+    self.down8.text = nil;
+    self.down9.text = nil;
 }
 
 
