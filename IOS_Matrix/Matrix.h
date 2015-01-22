@@ -14,5 +14,7 @@
 
 -(BOOL) inverse;
 
+-(void) add:(Matrix*) op2;
+
 @end
 

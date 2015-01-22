@@ -16,7 +16,7 @@
 {
     self = [super init];
     if (self) {
-        self.numbers=[NSArray arrayWithObjects:@1,@0,@0,@0,@1,@0,@0,@0,@1, nil];
+        self.numbers=[NSArray arrayWithObjects:@0,@0,@0,@0,@0,@0,@0,@0,@0, nil];
     }
     return self;
 }
@@ -62,6 +62,29 @@
     }
     
 }
+
+
+-(void) add:(Matrix*) op2{
+    
+    double res[9];
+    for(int i=0;i<9;i++){
+        res[i] = [self.numbers[i] doubleValue]+[op2.numbers[i] doubleValue];
+
+    }
+    
+    NSArray *tempArray = [NSArray array];
+    
+    for(int j =0 ;j<9;j++){
+        NSNumber *temp = [NSNumber numberWithDouble:res[j]];
+        tempArray=[tempArray arrayByAddingObject:temp];
+        
+    }
+    self.numbers = tempArray;
+
+
+}
+
+
 
 
 @end
