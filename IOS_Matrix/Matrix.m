@@ -103,5 +103,40 @@
 
 }
 
+-(void) multiply:(Matrix*) op2{
+    double res[9];
+    for(int i=0;i<9;i++){
+        int row = i/3;
+        int col = i%3;
+        
+        res[i] = [self.numbers[row*3] doubleValue]*[op2.numbers[col] doubleValue]+
+                 [self.numbers[row*3+1] doubleValue]*[op2.numbers[3+col] doubleValue]+
+                 [self.numbers[row*3+2] doubleValue]*[op2.numbers[6+col] doubleValue];
+        
+    }
+    
+    NSArray *tempArray = [NSArray array];
+    
+    for(int j =0 ;j<9;j++){
+        
+        NSNumber *temp = [NSNumber numberWithDouble:res[j]];
+        tempArray=[tempArray arrayByAddingObject:temp];
+        
+    }
+    self.numbers = tempArray;
+
+    
+}
+
+-(BOOL) divide:(Matrix*) op2{
+    
+    if([op2 inverse]){
+        [self multiply:op2];
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
 
 @end

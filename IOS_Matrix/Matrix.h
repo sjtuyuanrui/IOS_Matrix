@@ -16,7 +16,8 @@
 
 -(void) add:(Matrix*) op2;
 -(void) minus:(Matrix*) op2;
-
+-(void) multiply:(Matrix*) op2;
+-(BOOL) divide:(Matrix*) op2;
 
 @end
 
