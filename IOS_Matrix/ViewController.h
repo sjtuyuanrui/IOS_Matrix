@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Matrix.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
 
 
 @end

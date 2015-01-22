@@ -14,6 +14,7 @@
 		BD3AE19E1A70D86E00FBE33A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3AE19D1A70D86E00FBE33A /* Images.xcassets */; };
 		BD3AE1A11A70D86E00FBE33A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD3AE19F1A70D86E00FBE33A /* LaunchScreen.xib */; };
 		BD3AE1AD1A70D86E00FBE33A /* IOS_MatrixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3AE1AC1A70D86E00FBE33A /* IOS_MatrixTests.m */; };
+		BD3AE1B81A70D8A400FBE33A /* Matrix.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3AE1B71A70D8A400FBE33A /* Matrix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		BD3AE1A61A70D86E00FBE33A /* IOS_MatrixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_MatrixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3AE1AB1A70D86E00FBE33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD3AE1AC1A70D86E00FBE33A /* IOS_MatrixTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOS_MatrixTests.m; sourceTree = "<group>"; };
+		BD3AE1B61A70D8A400FBE33A /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		BD3AE1B71A70D8A400FBE33A /* Matrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Matrix.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				BD3AE19D1A70D86E00FBE33A /* Images.xcassets */,
 				BD3AE19F1A70D86E00FBE33A /* LaunchScreen.xib */,
 				BD3AE1901A70D86E00FBE33A /* Supporting Files */,
+				BD3AE1B61A70D8A400FBE33A /* Matrix.h */,
+				BD3AE1B71A70D8A400FBE33A /* Matrix.m */,
 			);
 			path = IOS_Matrix;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD3AE1B81A70D8A400FBE33A /* Matrix.m in Sources */,
 				BD3AE1991A70D86E00FBE33A /* ViewController.m in Sources */,
 				BD3AE1961A70D86E00FBE33A /* AppDelegate.m in Sources */,
 				BD3AE1931A70D86E00FBE33A /* main.m in Sources */,
