@@ -84,7 +84,24 @@
 
 }
 
+-(void) minus:(Matrix*) op2{
+    double res[9];
+    for(int i=0;i<9;i++){
+        res[i] = [self.numbers[i] doubleValue]-[op2.numbers[i] doubleValue];
+        
+    }
+    
+    NSArray *tempArray = [NSArray array];
+    
+    for(int j =0 ;j<9;j++){
+        NSNumber *temp = [NSNumber numberWithDouble:res[j]];
+        tempArray=[tempArray arrayByAddingObject:temp];
+        
+    }
+    self.numbers = tempArray;
 
+
+}
 
 
 @end
